@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Лисавина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2513057).
-* Наставник: `Неизвестно`.
+* Наставник: [`Александр Румянцев`](https://htmlacademy.ru/profile/id1521451).
 
 ---
 
