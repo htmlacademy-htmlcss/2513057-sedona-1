@@ -19,8 +19,8 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
-  background-color: #70bdea;
+  color: #000000;
+  background-color: #ffffff;
 
 }
 .button {
@@ -40,7 +40,22 @@ body {
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
   background-color: #756157;
+
 }
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin:-1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -60,12 +75,7 @@ body {
 
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-}
-
-.logo-text {
+  .logo-text {
   position: absolute;
   top: 190px;
   left: 50%;
@@ -74,7 +84,7 @@ body {
 
 .main-index {
   color: #000000;
-  background-color: #70bdea;
+  background-color: #ffffff;
   background-image: url("./images/index-background.jpg");
   background-size: 100% auto;
   /* ЧТОБЫ НЕ ИСКАЖАЛАСЬ КАРТИНКА */
@@ -132,18 +142,47 @@ body {
   background-color: #756157;
 }
 
+/* преимущества */
+.advantages-list {
+list-style: none;
+}
+
+.advantages-item-wide,
+.advantages-item-bridge {
+  width: Fixed (400px)px;
+  height: Fixed (385px)px;
+  padding: 103px 85px 103px 85px;
+  gap: 10px;
+  color: #82b3d3;
+  background-color: #ffffff;
+}
+
+.advantages-item-square,
+.advantages-item-tourist {
+  width: 400px;
+  height: 385px;
+  color: rgba (131, 179, 211, 0,12);
+  background-color: #ffffff;
+}
+
+.advantages-item-road{
+  width: 400px;
+  height: 385px;
+  color: rgba (131, 179, 211, 0,2);
+  background-color: #ffffff;
+}
+
+
+
+
 
 .page-footer {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
-  background-color: #70bdea;
+  background-color:  #ffffff;
   background-image: url("./images/bg-noisy.png");
   background-repeat: repeat;
-}
-
-.page-footer a {
-  color: #000000;
 }
 
 .footer-link .htmlacademy-link {
@@ -160,9 +199,14 @@ body {
 
 }
 
-.footer-contacts-address {
+.footer-contacts {
   font-style: normal;
 }
+
+.page-footer a {
+  color: #807c7c;
+}
+
 
 .footer-contacts-address p {
   font-size: 14px;
@@ -171,26 +215,26 @@ body {
   color: #000000;
 }
 
-.footer-contacts-address-phone {
+.footer-social{
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.footer-contacts-map-link {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
   color: #000000;
+  background-color: #ffffff;
   text-decoration: underline;
   text-transform: uppercase;
 }
-.page-footer {
+  .footer-contacts{
+  color: #000000;
+  background-color: #ffffff;
+}
+  .footer-link{
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+
+  .page-footer {
   text-align: center;
+
 }
 
 .inner-header-title {
@@ -278,7 +322,7 @@ font-weight: 700;
 }
 
 .pagination-disabled {
-  background-color: #595959;
+  background-color: #ffffff;
   }
 
 
@@ -292,4 +336,10 @@ font-weight: 700;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 50%
+
 }
