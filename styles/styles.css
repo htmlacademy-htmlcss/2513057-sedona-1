@@ -13,6 +13,9 @@
   src: url("./fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+.test {background-image: "photo-1.ipg";
+}
+
 
 
 body {
@@ -39,7 +42,8 @@ body {
   display: flex;
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
-  background-color: #756157;
+  color: #151515;
+  background-color: #b3997d;
 
 }
 
@@ -85,13 +89,21 @@ overflow: hidden;
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("./images/index-background.jpg");
+  /*background-image: url("./images/index-background.jpg");*/
   background-size: 100% auto;
   /* ЧТОБЫ НЕ ИСКАЖАЛАСЬ КАРТИНКА */
   background-repeat: no-repeat;
   /* ОТКЛЮЧИМ ЗАПОЛНЕНИЕ ВСЕГО ПРОСТРАНСТВА КАРТИНКОЙ */
   text-align: center;
    /* ЦЕНТРИРУЕМ ТЕКСТ */
+}
+
+.hero {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
 }
 
 
@@ -153,7 +165,7 @@ list-style: none;
   height: Fixed (385px)px;
   padding: 103px 85px 103px 85px;
   gap: 10px;
-  color: #82b3d3;
+  color: #242424;
   background-color: #ffffff;
 }
 
@@ -171,9 +183,6 @@ list-style: none;
   color: rgba (131, 179, 211, 0,2);
   background-color: #ffffff;
 }
-
-
-
 
 
 .page-footer {
@@ -222,11 +231,12 @@ list-style: none;
   text-decoration: underline;
   text-transform: uppercase;
 }
-  .footer-contacts{
+  .footer-contacts a{
   color: #000000;
   background-color: #ffffff;
 }
-  .footer-link{
+
+  .footer-link a{
     color: #000000;
     background-color: #ffffff;
   }
@@ -236,6 +246,25 @@ list-style: none;
   text-align: center;
 
 }
+
+.footer-sfooter-social-item {
+  background-image: url(../images/Social.svg);
+  color: #181875;
+  background-color:  #b01556;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 14px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .inner-header-title {
   font-size: 32px;
