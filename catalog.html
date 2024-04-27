@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -17,10 +18,10 @@
             <a class="navigation-link navigation-link-сurrent" href="index.html">Главная </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#"> О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиница</a>
+            <a class="navigation-link">Гостиница</a>
           </li>
         </ul>
 
@@ -28,12 +29,14 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span></a>
+              <img class="Search" src="./images/search.svg" width="20" height="20" alt="Поиск.">
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span></a>
+              <img class="favourites" src="./images/heart.svg" width="20" height="20" alt="Избранное.">
             <span class="navigation-badge">12</span>
-
+            <img class="quantity" src="./images/quantity.svg" width="20" height="20" alt="12.">
           </li>
           <li class="navigation-item">
             <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -65,12 +68,12 @@
           <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="swimming pool"> Swimming pool
+                <input class="control-input" type="checkbox" name="swimming pool"> Бассейн
               </label>
             </li>
             <li class="hotels-flters-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking"> Parking
+                <input class="control-input" type="checkbox" name="parking"> Паркинг
               </label>
             </li>
 
@@ -109,6 +112,7 @@
       <h2 class="visually-hidden">Список гостиниц Седоны</h2>
       <div class="search-hotel-couht">Найдено гостиниц: 38</div>
 
+      <div class="sorting-container">
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Популярные</option>
         <option value="cheap">Дешевые</option>
@@ -121,6 +125,7 @@
         <span class="visually-hidden">Одна карточка</span></a>
       <a href="#" class="button button-light">
         <span class="visually-hidden">Карточки</span></a>
+        </div>
 
       <ul class="hotels-list">
 
@@ -180,25 +185,34 @@
           <div class="rating">5,0</div>
         </li>
       </ul>
+
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link">1</a>
+          <a class="pagination-link pagination-prev pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link pagination-current">Страница 1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link" href="#">Страница 2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
+          <a class="pagination-link" href="#">Страница 3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">Страница 4</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <a class="pagination-link" href="#">Страница 10</a>
         <li class="pagination-item">
+          <a class="pagination-link pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
         </li>
       </ul>
     </main>
@@ -217,29 +231,35 @@
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
+
           </a>
         </li>
 
         <li class="footer-social-item">
           <a class="button" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
-          </a>
+
+            </a>
         </li>
 
         <li class="footer-social-item">
           <a class="button" href="https://www.youtube.com/user/htmlacademy">
             <span class="visually-hidden">Ютуб</span>
+
           </a>
         </li>
       </ul>
     </section>
+
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="footer-contacts-phone" href="tel:+78128121212"> +7 (812) 812 12 12</a>
     </section>
+
     <section class="footer-link">
       <h2 class="visually-hidden">Сcылка на академию</h2>
       <a class="html-academy-link" href="https://htmlacademy.ru/">html academy</a>
+      <img class="logo-academy" src= "Logo.svg" width="115" height="33" alt="HTML академия.">
     </section>
 
   </body>
