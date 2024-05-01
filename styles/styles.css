@@ -12,20 +12,28 @@
   font-weight: 700;
   src: url("./fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+
 }
-.test {background-image: "photo-1.ipg";
+html {
+  height: 100%;
 }
 
 
-
-body {
+.pade-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
+  
 
-}
+ }
+
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -55,7 +63,7 @@ margin:-1px;
 border: 0;
 padding: 0;
 white-space: nowrap;
-clip-path: inset(100%);
+clip-path: inset (100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
@@ -66,25 +74,41 @@ overflow: hidden;
   display: flex;
   padding: 15px 20px;
 }
-
-.navigation-list {
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+.navigation-list
+{
+ 
+  margin: 0;
+  padding: 0;
   display: flex;
   column-gap: 30px;
 }
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
+
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 
   .logo-text {
   position: absolute;
-  top: 190px;
+  top: 250px;
   left: 50%;
   transform: translateX(-50%);
 }
+
+.main-container {
+  flex-grow:1;
+  }
 
 .main-index {
   color: #000000;
@@ -98,18 +122,23 @@ overflow: hidden;
    /* ЦЕНТРИРУЕМ ТЕКСТ */
 }
 
-.hero {
+.hero-welcome {
+  width: 1200px;
+  height: 485px;
+  margin: 0 auto;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
 }
 
 
 /* List */
 .advantages-list {
+
+  margin: 0;
+  padding: 0;
   text-align: center;
+
 }
 
 /* Title */
@@ -120,11 +149,27 @@ overflow: hidden;
   text-transform: uppercase;
 }
 
-.infrastructure {
-
+.infrastructure-list{
+    display: flex;
+    justify-content: space-between;
     color: #000000;
-    background-color: #fbf8f8;
+    background-color:rgba(131, 179, 211, 0.12);
     text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .infrastructure-title-housing{
+    background-image: url("../images/Advantage-icon-жилье.svg");
+    width: 75px;
+    height: 72px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+   
+    
+
+
   }
 
   .container-search{
@@ -133,9 +178,14 @@ overflow: hidden;
     background-color: #fbf7f4;
     text-align: center;
   }
-/* List */
+/* List *//* преимущества */
 .advantages-list {
+
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 /* Index columns */
@@ -154,35 +204,58 @@ overflow: hidden;
   background-color: #756157;
 }
 
-/* преимущества */
-.advantages-list {
-list-style: none;
+
+.advantages-list-wide,
+.advantages-list-bridge {
+  display: flex;
+  color: #ffffff;
+  background-color: rgba(131, 179, 211, 1)
+  
 }
 
-.advantages-item-wide,
-.advantages-item-bridge {
-  width: Fixed (400px)px;
-  height: Fixed (385px)px;
-  padding: 103px 85px 103px 85px;
-  gap: 10px;
-  color: #242424;
-  background-color: #ffffff;
-}
 
 .advantages-item-square,
 .advantages-item-tourist {
+
   width: 400px;
   height: 385px;
-  color: rgba (131, 179, 211, 0,12);
-  background-color: #ffffff;
+  color: #000000;
+  background-color:rgba(131, 179, 211, 0.12);
+  
 }
 
 .advantages-item-road{
+
   width: 400px;
   height: 385px;
-  color: rgba (131, 179, 211, 0,2);
-  background-color: #ffffff;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+  text-align: center;
+  
 }
+
+
+.search-button{
+text-decoration: none;
+padding:8px 50px;
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+  }
+
+  .search-button{
+    padding: 8px 50px 8px 50px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: rgba(117, 97, 87, 1);
+    text-align: center;
+  }
+
+
+
+
+
+
 
 
 .page-footer {
@@ -256,21 +329,18 @@ list-style: none;
   height: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .inner-header-title {
   font-size: 32px;
   line-height: 35px;
   text-transform: uppercase;
 }
+
+.hotels-list-right-column {
+  display: flex;
+}
+
+
+
 
 /* Breadcrumbs */
 .breadcrumbs {
@@ -332,6 +402,15 @@ font-weight: 700;
   text-transform: uppercase;
 }
 
+
+.hotels-products {
+  display: flex;
+}
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
+}
+
 /* Link */
 .pagination {
   background-color: #70bdea;
@@ -370,5 +449,8 @@ font-weight: 700;
   display: flex;
   justify-content: space-between;
   width: 50%
-
+}
+.container {
+margin: 0 auto;
+width: 960px;
 }
