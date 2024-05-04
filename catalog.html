@@ -37,10 +37,12 @@
 
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <span class="visually-hidden">12</span>
+              <img class="quantity" src="./images/quantity.svg" width="20" height="20" alt="12.">
+
               <span class="visually-hidden">Избранное</span></a>
               <img class="favourites" src="./images/heart.svg" width="20" height="20" alt="Избранное.">
-            <span class="navigation-badge">12</span>
-            <img class="quantity" src="./images/quantity.svg" width="20" height="20" alt="12.">
+            
           </li>
           <li class="navigation-item">
             <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -71,7 +73,7 @@
         <h2 class="visually-hidden"hidden>Фильтры</h2>
         <form class="hotels-flters" action="https://echo.htmlacademy.ru/" method="get">
         </form>
-
+     
         <fieldset class="hotels-filter-group">
           <legend class="hotels-filter-title">Инфраструктура</legend>
           <ul class="hotels-filter-list">
@@ -93,7 +95,7 @@
             </li>
           </ul>
         </fieldset>
-      </section>
+  
 
       <fieldset class="hotels-filter-group">
         <legend class="hotels-filter-title">Тип жилья</legend>
@@ -114,7 +116,7 @@
           </li>
         </ul>
       </fieldset>
-
+    </section>
       <button class="button" type="submit">Применить</button>
       <button class="visually-hidden" type="submit">Сбросить</button>
 
@@ -197,37 +199,44 @@
           <img class="stars" src="./images/star-2.svg" alt="2 звезды."height="37" width="140">
           <div class="rating">5,0</div>
         </li>
-
       </ul>
 
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
+          <a class="pagination-link pagination-prev pagination-disabled" href="#">
             <span class="visually-hidden">Предыдущая страница</span>
           </a>
-        </li>
+          </li>
+
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">Страница 1</a>
+          <a class="pagination-link pagination-current" href="#">
           <span class="visually-hidden">Первая страница</span>
+        </a>
         </li>
+
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Страница 2</a>
+          <a class="pagination-link" href="#"> 
           <span class="visually-hidden">Вторая страница</span>
+        </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Страница 3</a>
+          <a class="pagination-link" href="#">
           <span class="visually-hidden">Третья страница</span>
+        </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Страница 4</a>
+          <a class="pagination-link" href="#">
           <span class="visually-hidden">Четвертая страница</span>
+        </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">...</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">Страница 10</a>
+          <a class="pagination-link" href="#"> 
           <span class="visually-hidden">Десятая страница</span>
+        </a>
+        </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-next" href="#">
             <span class="visually-hidden">Следующая страница</span>
