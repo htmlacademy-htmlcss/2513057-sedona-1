@@ -39,10 +39,10 @@ html {
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #6e5656;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -113,12 +113,14 @@ html {
   border-radius: 4px;
   margin-left: auto;
   padding: 10px 10px;
+
 }
 
 
 .navigation-link {
   display:block;
-  
+  text-decoration: none; 
+  font-weight: 700px;
 }
 
 .navigation-user {
@@ -154,32 +156,18 @@ html {
 .logo {
   display: block;
   margin: 0 auto;
+
 }
 
 .logo-text {
   position: absolute;
-  top: 240px;
+  top: 139px;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 64px;
-
+ 
 }
 
-.img-before:before {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  content: url("../images/vector welcome.svg");
-}
 
-.img-after:after {
-  position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translateX(-50%);
-  content: url("../images/vector inscription.svg");
-}
 
 .main-container {
   flex-grow: 1;
@@ -214,7 +202,7 @@ html {
   padding-top: 69px;
   padding-bottom: 69px;
 
- 
+   
 }
 .infrastructure-list {
   display: flex;
@@ -365,19 +353,24 @@ font-family: "PT Sans";
 font-size:24px; 
 line-height:28px; 
 text-transform:uppercase;
-
-width: 100px;
+width: 230px;
+height: 181px;
 align-self: center;
 }
 
+.advantages-title-block {
+
+  font-family: "PT Sans";
+  font-size:24px; 
+  line-height:28px; 
+  text-transform:uppercase;
+  width: 230px;
+  height: 77px;
+  align-self: center;
+ 
+  }
 
 
-/* .container-search {
-
-  color: #242424;
-  background-color: #fbf7f4;
-  text-align: center;
-}*/
 
 
 .search-wrapper{
@@ -446,24 +439,33 @@ margin-top: 0;
   text-decoration: none;
   width: 232px;
   height: 52px;
+  float: right; 
 }  
 .following-from-name{
   height: 52px;
-  width: 170px;
- 
+  width: 232px;
+  
+  
+} 
+.following-from-name input{
+  height: 46px;
+  width: 260px;
+  border-radius: 4px 0px 0px 4px;
+  gap: 260px;
 } 
 
 .user-email{
   height: 52px;
-  width: 170px;
- 
+
 } 
 
 .footer-link {
+  display: flex;
   font-size: 14px;
   color: #000000;
   float: right; 
   margin-right: 70px;
+  align-items: center;
 }
 
 .page-footer-title {
@@ -477,8 +479,9 @@ margin-top: 0;
 }
 
 .footer-contacts {
-
+ display: flex;
   text-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 
@@ -514,7 +517,7 @@ grid: 10px ;
 .footer-contacts a {
   color: #000000;
   background-color: #ffffff;
- 
+
 }
 
 
@@ -578,24 +581,45 @@ grid: 10px ;
 
   background-repeat: no-repeat;
 }
-.rating-stars{
-  background-image: url("../images/hotel-1.jpg");
-  color: #8eb4d4;
-}
+.rating-stars-four{
+  display: block;
+  width: 140px;
+  height: 37px;
+  background-image: url("../images/star-4.svg");
 
+}
+.rating-stars-three{
+  display: block;
+  width: 140px;
+  height: 37px;
+  background-image: url("../images/star-3.svg");
+
+}
+.rating-stars-two{
+  display: block;
+  width: 140px;
+  height: 37px;
+  background-image: url("../images/star-2.svg");
+
+}
 
 
 
 
 /* Breadcrumbs */
 .breadcrumbs {
-  color: #242424;
+
+  
+  color: #f9f5f5;
+  list-style-type: none;
 }
 
 /* Link */
 .breadcrumbs-link {
   color: inherit;
-}
+  padding-left: 70px;
+  text-decoration: none; 
+}  
 
 /* Title */
 .catalog-filter-title {
@@ -612,6 +636,7 @@ grid: 10px ;
 }
 
 .sorting-container {
+  display: flex;
   color: #000000;
   background-color: #ffffff;
 }
@@ -621,7 +646,13 @@ grid: 10px ;
   color: #242424;
   background-color: #ffffff;
 }
-
+.inner-header-title {
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+  padding-top: 35px;
+  padding-left: 70px;
+}
 
 
 
@@ -634,6 +665,7 @@ grid: 10px ;
 }
 .hotels-filter-title{
   color: #ffffff;
+  text-decoration: none; 
 }
 
 .hotels-filter-list {
@@ -646,8 +678,28 @@ grid: 10px ;
 
   top: 64px;
   padding: 35px 70px 70px 70px;
+ 
+}
 
-  
+.hotels-card-choice{
+ display: flex;
+}
+
+.rating-stars-list {
+  display: flex;
+ }
+
+
+.favorites{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #6eaeb8;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .catalog-filter {
@@ -708,10 +760,33 @@ background-color: #78a8d9;
     padding: 0;
     background-color: transparent;
   }
+  .sorting-container{
+    width: 292px;
+    height: 49px;
+    color: #060606;
+  }   
+.select-control{
+width: 100%;
+font-family: inherit;
+font-size: 18px;
+line-height: 21px;
+color: #060606;
+  
 
+  /* 1*/
+ /* appearance: none;*/
+   /* 2*/
+   border: 2px solid #e5e5e5;
+   border-radius: 4px;
+    /* 3*/
+    padding: 12px 20px;
+    padding-right: 40px;
+       /* 4*/
+       background-image: url("..images/arrow-down.svg");
+       background-repeat:no-repeat;
+       background-position:right 20px center;
 
-
-
+      }
 
 
 
