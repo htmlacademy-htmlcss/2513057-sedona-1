@@ -90,14 +90,65 @@ padding: 0;
   padding: 0;
 
 }
+.view-button-item-current {
+
+background-image: url("../images/view.svg");
+width: 48px;
+height: 48px;
+  color: #000000;
+  background-color: #f7f9f9;
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.view-button-item-card {
+
+  background-image: url("../images/view-1.svg");
+  width: 48px;
+  height: 48px;
+    color: #000000;
+    background-color: #f7f9f9;
+    background-repeat: no-repeat;
+    list-style-type: none;
+  }
+
+  .view-button-item-list {
+
+    background-image: url("../images/view-2.svg");
+    width: 48px;
+    height: 48px;
+      color: #000000;
+      background-color: #f7f9f9;
+      background-repeat: no-repeat;
+      list-style-type: none;
+    }
 
 
 
 
 
+.grid-container {
 
 
+display: grid;
+grid-template-columns: 338px 292px 48px 48px 48px;
+gap: 117px;
+list-style-type: none;
+width: 1060px;
+height: 49px;
+margin-bottom: 60px;
+margin-top: 70px;
+}
 
+
+.view-buttons{
+display: flex;
+width: 160px;
+gap: 8px;
+}
+.search-hotel-couht{
+  margin: 0;
+    }
 
 
 
