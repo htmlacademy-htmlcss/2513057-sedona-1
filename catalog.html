@@ -11,53 +11,57 @@
     <div class="pade-container">
       
       <header class="page-header" data-test="header">
-        <a class = "navigation-logo" href="#">
+        <div class="pade-header-container">
+
+       <nav class="navigation">
+        <a class = "navigation-logo" href="index.html">
         <img class="logo" src="./images/logo-city.svg" width="140" height="70" alt="Логотип города Седона.">
       </a>
-      <nav class="navigation">
-
+     
         <ul class="navigation-list">
-          <li class="navigation-item-сurrent">
-            <a class="navigation-link navigation-link-сurrent" href="index.html">Главная </a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная </a>
           </li>
 
-          <li class="navigation-item-sedona">
-            <a class="navigation-link navigation-link-sedona" href="#"> О Седоне</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"> О Седоне</a>
           </li>
 
-          <li class="navigation-item-hotel">
-            <a class="navigation-link navigation-link-hotel" href="catalog.html">Гостиницы</a>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-сurrent" href="#">Гостиницы</a>
           </li>
         </ul>
 
-
-        
-        <div class="navigation-bloсk">
-          
-              <p class="navigation-link"> <span class="visually-hidden">Поиск</span></p>
-              <img class="search" src="./images/search.svg" width="20" height="20" alt="Поиск.">
-
-              <p class="navigation-link"><span class="visually-hidden">Избранное</span></p>
-                  
-              <img class="favourites" src="./images/heart.svg" width="20" height="20" alt="Избранное.">
-            
-              <span class="visually-hidden">12</span>
-              <img class="quantity" src="./images/quantity.svg" width="20" height="20" alt="12.">
-
-              <button class="navigation-button" type ="submit"> Хочу сюда!</button>
+    
+        <ul class="navigation-bloсk">
+          <li class="navigation-bloсk-items-search">
+              <a class="navigation-bloсk-link navigation-bloсk-link-search" href="#"></a>
+              <span class="visually-hidden">Поиск </span>
+            </a>
+            <li class="navigation-bloсk-item-favorite">
+              <a class="navigation-bloсk-link navigation-bloсk-link-favorite" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge">12</span>
+                <button class="navigation-button" type ="submit"> Хочу сюда!</button>
+              </a>
+            </li>
+          </ul>     
+        </nav> 
+             
               </div>
-
-      </nav>
     </header>
 
     <main class="main-container main-inner"data-test="main">
       <div class="main-inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
         <ol class="breadcrumbs">
          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
+            <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html"> </a> 
+                    
+              <a class="breadcrumbs-link breadcrumbs-arrow-link" href="index.html"></a>
               <span class="visually-hidden">Главная</span>
-            </a> 
+            
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Гостиницы</a>  
@@ -133,11 +137,15 @@
       <fieldset class="hotels-filter-group">
         <legend class="hotels-filter-title">Стоимость, Р:</legend>
       </fieldset>
-    </section>
+  
+
+    <div class="hotels-filter-button">
 
       <button class="button-hover" type="submit">Применить</button>
-      <button class="button-all" type="submit">В избранное</button>
-
+      <button class="button-all" type="submit">Сбросить</button>
+    </div>
+  
+    </section>
 
 
 

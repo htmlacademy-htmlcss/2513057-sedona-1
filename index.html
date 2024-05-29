@@ -9,35 +9,42 @@
 
   <body>
     <div class="pade-container">
-    <header class="page-header" >
-      <a class = "navigation-logo" href="#">
+      <header class="page-header" data-test="header">
+        <div class="pade-header-container">
+
+       <nav class="navigation">
+        <a class = "navigation-logo" href="catalog.html">
         <img class="logo" src="./images/logo-city.svg" width="140" height="70" alt="Логотип города Седона.">
       </a>
-      <nav class="navigation">
+
+    
         <ul class="navigation-list">
-          <li class="navigation-item-сurrent">
+          <li class="navigation-item">
             <a class="navigation-link navigation-link-сurrent" >Главная </a>
           </li>
-          <li class="navigation-item-sedona">
-            <a class="navigation-link navigation-link-sedona" href="#"> О Седоне</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"> О Седоне</a>
           </li>
-          <li class="navigation-item-hotel">
-            <a class="navigation-link navigation-link-hotel" href="catalog.html">Гостиница</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиница</a>
           </li>
         </ul>
-
-        <div class="navigation-bloсk">
-         
-            <p class="navigation-link"> <span class="visually-hidden">Поиск</span></p>
-              <img class="Search" src="./images/search.svg" width="20" height="20" alt="Поиск.">
-         
-            <p class="navigation-link"><span class="visually-hidden">Избранное</span></p>
-            <img class="favourites" src="./images/heart.svg" width="20" height="20" alt="Избранное.">
-            <span class="visually-hidden">12</span>
-            <img class="quantity" src="./images/quantity.svg" width="20" height="20" alt="12.">
-            <button class="navigation-button button" href="#search"> Хочу сюда!</button>
-            </div>
-      </nav>
+        <ul class="navigation-bloсk">
+          <li class="navigation-bloсk-item">
+              <a class="navigation-bloсk-link navigation-bloсk-link-search" href="#"></a>
+              <span class="visually-hidden">Поиск </span>
+            </a>
+            <li class="navigation-bloсk-item">
+              <a class="navigation-bloсk-link navigation-bloсk-link-favorite" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="notification-badge">12</span>
+                <button class="navigation-button" type ="submit"> Хочу сюда!</button>
+              </a>
+            </li>
+          </ul>     
+        </nav> 
+             
+              </div>
     </header>
 
     <main class="main-container main-index">
@@ -115,11 +122,11 @@
             <p class="infrastructure-discription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="infrastructure-item-meal">
-            <h3 class="infrastructure-title">Еда </h3>
+            <h3 class="infrastructure-title-meal">Еда </h3>
             <p class="infrastructure-discription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="infrastructure-item-gifts">
-            <h3 class="infrastructure-title">Сувениры </h3>
+            <h3 class="infrastructure-title-gifts">Сувениры </h3>
             <p class="infrastructure-discription">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
