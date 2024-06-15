@@ -1092,7 +1092,7 @@ margin-top: 0;
 .hotels-filter-title {
   color: #ffffff;
   text-decoration: none;
-  padding-left: 40px;
+  
 }
 
 .hotels-filter-list {
@@ -1161,6 +1161,7 @@ margin-top: 0;
   box-sizing: border-box;
   line-height: 16px;
   font-weight: 700;
+  
 }
 
 /*наведение курсора*/
@@ -1312,7 +1313,7 @@ text-decoration: none;
 
 }
 .hotels-filter-group{
-  
+  padding-left: 40px;
  border: none; 
   }
 
@@ -1356,9 +1357,10 @@ text-decoration: none;
 
 .range-toggle {
   position: absolute;
-  width: 10px;
+  width: 20px;
   height: 20px;
   background: #ffffff;
+  border-radius: 5px;
  
   
 }
@@ -1369,11 +1371,13 @@ text-decoration: none;
 .toggle-min {
   top: -8px;
   left: 0px;
+  border: none;
 }
 
 .toggle-max {
   top: -8px;
   right: 1px;
+  border: none;
 }
 
 
@@ -1640,6 +1644,7 @@ height: 60px;
 transition: 0.2s;
 background-color: rgba(104, 162, 202, 1);
 border: none;
+border-radius: 10px;
 }
 .namber-control-button{
   display: inline-block; 
@@ -1665,28 +1670,104 @@ border: none;
   
   .auth-form-user-options .control-label {
     font-weight: 577px;
+   
   }
   
   .field-group{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 50px;
     }
     .field-group-uzer{
       display: flex;
-      justify-content: space-between;
+   align-items: center;
+      padding: 0;
+      margin: 50px;
       }
       .form-field{
        width: 440px;
        padding: 10px 10px;
+  transition: 0.2s;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
         }
-        .form-date:after{
-  
-          position: absolute;
+
+        .field-group:after{
           content:"";
           width: 15px;
           height: 16px;
           align-items: center;
-          background-image: url("../images/data.svg");
+          background: url("../images/data.svg");
+          background-position: center;
           background-repeat: no-repeat;
-         }
-           
+          margin-top: 10px;
+          margin-left: -65px;
+        }
+        .form-message{
+         margin-left: 126px;
+          }
+          .quantity{
+            width: 19px; 
+             height: 48px;
+             border: none;
+             padding-left: 10px;
+            }
+
+           .field-group-uzer-half{
+            display: flex;
+            align-items: center;
+            width: 50%;
+              margin: 0;
+              padding: 0;
+              }
+              .informational text{
+                margin: 0;
+                padding: 0;
+                }
+                .i-circle {
+                  position: absolute;
+                  display: inline-block;
+                  background-color: #609bab;
+                  color: #fff;
+                  border-radius: 50%;
+                 
+                  line-height: 30px; 
+                  width: 25px;
+                  height: 25px;
+                  text-align: center;
+                  margin-left: 230px;
+              }
+              .text_center {
+                display: flex;
+              }
+              .rectangle{
+
+                width: 37%;
+                height: 100px;                
+                border:1px solid;                
+                margin:auto;                
+                background: #000000;
+
+              }
+               
+
+
+
+                
+                .text_center{                
+                color: #ffffff;                
+                text-align: center;
+                border-radius: 10px;
+                width: 225px;
+                margin-left: 0;
+                margin-right: 0;
+                height: 142px;
+                padding: 10px 10px;
+               
+                }
+                .text_center:after{                
+                  position: absolute;
+                  content:"";
+                  border: 20px solid transparent;
+                  }

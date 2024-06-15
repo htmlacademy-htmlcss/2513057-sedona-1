@@ -195,8 +195,8 @@
           <a class="footer-social-link footer-social-youtube" href="#">
             <span class="visually-hidden">Ютуб</span>
             <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" fill="currentColor" >
-              </svg> 
+              <path d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" fill="currentColor"/>
+              </svg>
           </a>
           </li>
         </ul>
@@ -218,77 +218,81 @@
 
   <div class="modal-container modal-container-close">
     <div class="modal modal-searh">
-      <button class="modal-close-button"type="button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
 
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="search-form" action="https://echo.htmlacademy.ru/"method="post">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
 
           <p class="field-group">
             
-            <label class="form label" for="check-in-date"> Дата заезда:</label>
+            <label class="form label" for="check-in-date"> Дата Заезда:</label>
             <input class="form-field calendar-field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату ">
-            <a class="form-date" href="#">
-              <span class="visually-hidden">Календарь</span>
-            </a>
+            
           </p>
             <span class="form-message form-message-error">Мы не можем отправить вас в прошлое</span>
         
         <p class="field-group">
-          <label class="form-label" for="check-out-date">Дата выезда</label>
+          <label class="form-label" for="check-out-date">Дата Выезда</label>
           <input class="form-field calendar-field" type="text" id="check-out-date" name="check-out-date"
             value="01 сентября 2023" placeholder="Укажите дату">
           </p>
           <span class="form-message">На эти даты есть пока свободные номера. Пока есть.</span>
       
         <div class="field-group-uzer">
-        <p class="field-group field-group-half">
-          <label class="form label" form="adults">Взрослые</label>
-          <span class="number control"></span>
-          <button class="namber-control-button" type="button">
-            <span class="visually-hidden">Уменьшить</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
-              </svg>
-              
-          </button>
-          <a class="button-btn" href="#">2</a>
-          <span class="visually-hidden">Количество человек</span>
-          <button class="namber-control-button" type="button">
-            <span class="visually-hidden">Увеличить</span>
-        
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
-              </svg>
-              
-          </button>
-        </p>
-        <p class="field-group field-group-half">
-          <label class="form label" form="adults">Дети</label>
-          <span class="i"></span>
-          <p class="informational text">Укажите количество детей,<br> которые будут с вами, возраст <br> которых от 6 до 18 лет.Дети<br>до 6 лет разрешаются<br>бесплатно.</p>
-          <span class="number control"></span>
-          <button class="namber-control-button" type="button">
-            <span class="visually-hidden">Уменьшить</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
-              </svg>
-              
-          </button>
-        
-          <a class="button-btn" href="#">2</a>
-          <span class="visually-hidden">Количество человек</span>
-          <button class="namber-control-button" type="button">
-            <span class="visually-hidden">Увеличить</span>
-        
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
-              </svg>
+          <p class="field-group-uzer-half">
+            <label class="form label" for="adults">Взрослые</label>
+      
+            <button class="namber-control-button" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+                
+            </button>
+          
+            <input type="text" class="quantity" value="2" data-max-count="20">
+            <span class="visually-hidden">Количество человек</span>
+            <button class="namber-control-button" type="button">
+              <span class="visually-hidden">Увеличить</span>
+          
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>           
+            </button>
+          </p>
+
+          <p class="field-group-uzer-half">
+            
+            <label class="form label" for="adults">Дети</label>
+            <div class="i-circle">i
+              <div class="circle-text">
+                <div class="rectangle text_center">Укажите количество детей,<br>которые будут с вами, возраст<br>
+                  которых от 6 до 18 лет. Дети<br>до 6 лет разрешаются<br>бесплатно.
+                </div>
+              </div>
             </div>
-          </button>
-                  </p>
+            
+          
+            <button class="namber-control-button" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+              </svg>
+            </button>
+          
+            <input type="text" class="quantity" value="2" data-max-count="20">
+            <span class="visually-hidden">Количество человек</span>
+            <button class="namber-control-button" type="button">
+              <span class="visually-hidden">Увеличить</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                </svg>
+            </button>
+         
+        </div>
                   <button class="button auth-form-button" type="submit">Найти</button>
 
 
