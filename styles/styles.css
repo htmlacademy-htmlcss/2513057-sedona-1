@@ -20,9 +20,9 @@ html {
 }
 
 body {
- 
+
   margin: 0;
-  
+
 }
 
 
@@ -30,7 +30,6 @@ body {
   margin: 0 auto;
   display: flex;
   width: 1200px;
-  
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -88,13 +87,10 @@ height: 48px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   list-style-type: none;
-   
+
 }
 
-.view-button-item-current svg:hover {
-  stroke: red;
-  fill:  red;
-}
+
 
 
 
@@ -177,7 +173,7 @@ margin-top: 1px;
   display: flex;
   height: 64px;
 
-  
+
 }
 
 .navigation {
@@ -215,7 +211,7 @@ margin-top: 1px;
 
 .navigation-link:hover {
   background-color: #ffffff;
- 
+
 }
 
 
@@ -248,11 +244,11 @@ position: relative;
 
 
 .navigation-bloсk-item {
-  position: relative; 
+  position: relative;
 }
 
 .navigation-bloсk {
-position: relative; 
+position: relative;
 width: 268px;
 display: flex;
 flex-wrap: wrap;
@@ -269,11 +265,11 @@ list-style-type: none;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid rgb(250, 249, 249); 
-  background-color: rgba(125, 181, 79, 1); 
+  border: 2px solid rgb(250, 249, 249);
+  background-color: rgba(125, 181, 79, 1);
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.6em; 
+  font-size: 0.6em;
   position: absolute;
   top: -1em; left: 1em;
   right: -1em; bottom: -1em;
@@ -281,7 +277,7 @@ list-style-type: none;
 
 
 }
-  
+
 
 
 .logo {
@@ -337,12 +333,12 @@ list-style-type: none;
 
 }
 .hero-welcome::after{
-  
+
  position: absolute;
  content: "";
  width: 100%;
  height: 57px;
- left: 0px;
+ left: 0;
  bottom: -1px;
  z-index: 1;
  background-image: url("../images/triangels.svg");
@@ -407,15 +403,15 @@ list-style-type: none;
   text-align: center;
 }
 .infrastructure-title-housing{
-  padding-top: 74px; 
+  padding-top: 74px;
 }
 
 .infrastructure-title-meal{
-  padding-top: 74px; 
+  padding-top: 74px;
 }
 
 .infrastructure-title-gifts{
-  padding-top: 74px; 
+  padding-top: 74px;
 }
 
 
@@ -426,7 +422,7 @@ list-style-type: none;
   display: flex;
   text-align: center;
   margin: 0 auto;
-  
+
 
 }
 
@@ -483,8 +479,8 @@ margin: 0;
   text-align: center;
   width: 400px;
 justify-content: center;
-  
- 
+
+
 }
 
 
@@ -606,7 +602,7 @@ margin-top: 0;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 80px;
-  
+
 
 
 }
@@ -632,13 +628,13 @@ margin-top: 0;
   }
   .button-submit:focus,
   .button-submit:hover{
-  
+
     background-color: rgba(104, 162, 202, 1);
     color: rgb(250, 248, 247);
   }
 
   .button-submit:active{
-  
+
     background-color: rgba(130, 179, 211, 1);
     color: rgb(250, 248, 247);
   }
@@ -655,7 +651,7 @@ margin-top: 0;
   text-decoration: none;
   width: 91px;
   height: 20px;
- 
+
 }
 .button-hover:focus,
 .button-hover:hover{
@@ -678,8 +674,8 @@ margin-top: 0;
 
 
 /* кнопка сбросить */
-.button-all{
-  background-color: rgba(117, 97, 87, 1);
+.button-all {
+  background: unset;
   color: rgba(229, 229, 229, 1);
   text-align: center;
    border-radius: 4px;
@@ -792,7 +788,7 @@ margin-top: 0;
   border: none;
   border-radius: 4px;
   color: #ffffff;
-  background-color:  rgba(125, 181, 79, 1); 
+  background-color:  rgba(125, 181, 79, 1);
   height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -803,14 +799,14 @@ margin-top: 0;
 .favorites-button-top:hover,
 .favorites-button-top:focus{
 
-  background-color: rgba(108, 158, 66, 1); 
+  background-color: rgba(108, 158, 66, 1);
   color: rgb(250, 248, 247);
 }
 
 
 .favorites-button-top:active{
 
-  background-color: rgba(125, 181, 79, 1); 
+  background-color: rgba(125, 181, 79, 1);
   color: rgb(250, 248, 247);
 }
 
@@ -819,19 +815,6 @@ margin-top: 0;
   background-color: rgba(229, 229, 229, 1);
   color: rgb(250, 248, 247);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .following-from-name {
   height: 100%;
@@ -898,7 +881,7 @@ margin-top: 0;
   line-height: 21px;
   font-weight: 700;
   align-items: center;
- 
+
 
 }
 
@@ -936,7 +919,7 @@ margin-top: 0;
   width: 56px;
   height: 44px;
   text-align: center;
-  
+
 }
 
 .footer-social-item:nth-child(3n) {
@@ -1055,7 +1038,7 @@ margin-top: 0;
 }
 
 
-  /* 
+  /*
 .breadcrumbs-item:not(:last-child)::after {
   margin-left: 10px;
   margin-right: 10px;
@@ -1104,13 +1087,33 @@ margin-top: 0;
 .hotels-filter-title {
   color: #ffffff;
   text-decoration: none;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
 
 .hotels-filter-list {
   color: #ffffff;
-  list-style-type: none; 
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 0;
 }
+
+.hotels-filter-list-i {
+  color: #ffffff;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+
 
 .hotels-products {
   display: flex;
@@ -1173,7 +1176,7 @@ margin-top: 0;
   box-sizing: border-box;
   line-height: 16px;
   font-weight: 700;
-  
+
 }
 
 /*наведение курсора*/
@@ -1283,7 +1286,7 @@ object-fit: contain;
       width: 300px;
       justify-content: flex-end;
       padding-top: 15px;
-    
+
       }
 
 
@@ -1326,13 +1329,13 @@ text-decoration: none;
 }
 .hotels-filter-group{
   padding-left: 40px;
- border: none; 
+ border: none;
   }
 
- 
 
 
- /*  
+
+ /*
 .range {
   max-width: 220px;
   overflow: auto;
@@ -1373,8 +1376,8 @@ text-decoration: none;
   height: 20px;
   background: #ffffff;
   border-radius: 5px;
- 
-  
+
+
 }
 
 .range-toggle:hover {
@@ -1382,7 +1385,7 @@ text-decoration: none;
 }
 .toggle-min {
   top: -8px;
-  left: 0px;
+  left: 0;
   border: none;
 }
 
@@ -1400,8 +1403,8 @@ text-decoration: none;
 
 .range {
   position: relative;
- 
-  
+
+
 }
 
  .range-input-lable-min{
@@ -1491,7 +1494,7 @@ text-decoration: none;
   left: 0;
   width: 16px;
   height: 16px;
-  border: 0px solid #f6f2f2;
+  border: 0 solid #f6f2f2;
   background-color: #ffffff;
   color: #ffffff;
 
@@ -1535,22 +1538,22 @@ text-decoration: none;
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-  }  
+  }
 
 
  /*Radio */
  .control-mark-radio{
-  left: 0;
+  left: -30px;
   position: absolute;
   background-color: #ffffff;
   width: 18px;
   height: 18px;
   border-radius: 50%;
- margin-left: 237px;
+ margin-left: 250px;
 }
 
 .control-radio{
-margin-left: 30px;
+margin-left: -1px;
 }
 
 .control-input[type="radio"]:checked+.control-mark-radio::before {
@@ -1606,26 +1609,36 @@ margin-left: 30px;
   position: absolute;
   padding: 0;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 52px;
   height: 52px;
   border-radius: 50%;
   margin-top: 65px;
   margin-right: 50px;
    border: none;
-  background-image: url("../images/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  z-index: 99;
+}
+
+.modal-close-button svg path {
+  fill: #000000;
+}
+
+.modal-close-button:hover svg circle {
+  fill: #E6E6E6;
+}
+
+.modal-close-button:active svg path {
+  fill: rgba(0, 0, 0, .3);
 }
 
 .modal-close-button:hover {
-  background-color: #e6e6e6;
+  background-color: rgb(99, 34, 34);
   cursor: pointer;
 }
 
 .modal-close-button:focus {
-  background-color: #e6e6e6;
+  background-color: rgba(242, 242, 242, 1);
   outline: 3px solid #82b3d3;
 }
 
@@ -1634,16 +1647,16 @@ margin-left: 30px;
 }
 
 .modal-title {
-  margin-bottom: 65px;
+ z-index: 1;
   text-wrap: nowrap;
   margin-top: 10px;
-  margin-right: 235px;
   color: #000000;
-  font-size: 30px;
+ width: 413px;
+ height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "PT Sans" sans-serif;
-  line-height: 36px;
+   margin: 0;
+
 }
 
 
@@ -1651,7 +1664,7 @@ margin-left: 30px;
   width: 577px;
   height: 448px;
   border-radius: 30px;
- 
+
 }
 .modal-content {
   position: relative;
@@ -1662,7 +1675,7 @@ margin-left: 30px;
 
 
 .form-label{
-  
+
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
@@ -1675,11 +1688,14 @@ margin-left: 30px;
   color: rgba(255, 87, 87, 1);
   width: 320px;
   height: 21px;
-   margin-left: 150px;
+   margin-left: 156px;
   margin-top: 5px;
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 20px;
+  font-family: "PT Sans";
+  font-weight: 400;
+
 }
   .form-message-available{
     color: rgb(7, 7, 7);
@@ -1693,7 +1709,7 @@ margin-left: 30px;
 
 }
 .button-btn{
-  display: inline-block; 
+  display: inline-block;
   text-decoration: none;
   width:31px;
 height: 20px;
@@ -1707,7 +1723,7 @@ background-color: #f5f5e0;
 }
 
 .auth-form-button{
-display: inline-block; 
+display: inline-block;
 text-decoration: none;
 width: 581px;
 height: 60px;
@@ -1738,43 +1754,30 @@ margin-left: 2px;
 
 
 .namber-control-button{
-  display: inline-block; 
+  display: inline-block;
   text-decoration: none;
-border: none;
+ border: none;
   width: 40px;
   height: 48px;
   transition: 0.2s;
-  background-color: rgb(204, 207, 209);
-  
+
+
   }
 
   .namber-control-button:hover {
     background-color: #e6e6e6;
     cursor: pointer;
   }
-  
+
   .namber-control-button:focus {
     background-color: #e6e6e6;
-    outline: 3px solid #82b3d3;
+    box-shadow: inset 0 0 0 4px  rgba(104, 162, 202, 1);
+    outline: none;
   }
-  
+
   .namber-control-button:active {
     color: rgba(0, 0, 0, 0.3);
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   .search-form.field-group {
@@ -1788,17 +1791,17 @@ border: none;
     justify-content: space-between;
     font-weight: 577px;
   }
-  
+
   .auth-form-user-options .control-label {
     font-weight: 577px;
-   
+
   }
-  
+
   .field-group{
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
-    margin-top: 50px;
+    margin-top: 58px;
     align-items: center;
     height: 50px;
     }
@@ -1837,42 +1840,36 @@ border: none;
      border-radius: 5px;
            }
 
+  .field-group:after{
+    content:"";
+    width: 15px;
+    height: 16px;
+    align-items: center;
+    background: url("../images/data.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: -65px;
+  }
 
 
+  #adults {
+    width: 21px;
+    height: 48px;
+    border: none;
+    padding-left: 10px;
+    margin-left: 2px;
+    background-color:  rgba(242, 242, 242, 1);
+  }
 
-
-
-
-
-
-
-        .field-group:after{
-          content:"";
-          width: 15px;
-          height: 16px;
-          align-items: center;
-          background: url("../images/data.svg");
-          background-position: center;
-          background-repeat: no-repeat;
-          margin-top: 10px;
-          margin-left: -65px;
-        }
-        
-         
-            #adults {
-              width: 19px; 
-              height: 48px;
-              border: none;
-              padding-left: 10px;
-              margin-left: 3px;
-              }
-              #adults-children {
-                width: 19px; 
-                height: 48px;
-                border: none;
-                padding-left: 10px;
-                margin-left: 3px;
-                } 
+  #adults-children {
+    width: 21px;
+    height: 48px;
+    border: none;
+    padding-left: 10px;
+    margin-left: 2px;
+    background-color:  rgba(242, 242, 242, 1);
+  }
 
 
 
@@ -1888,7 +1885,7 @@ border: none;
   border: none;
   background-color: rgba(242, 242, 242, 1);
   width: 110px;
- 
+
   margin: 0;
   padding: 0;
 }
@@ -1904,10 +1901,10 @@ border: none;
   background-color: #609bab;
   color: #fff;
   border-radius: 50%;
-  margin-left: 33px;
-  line-height: 30px;
-  width: 25px;
-  height: 25px;
+  margin-left: 38px;
+  line-height: 23px;
+  width: 20px;
+  height: 20px;
   text-align: center;
 
 }
@@ -1920,7 +1917,7 @@ border: none;
 
   width: 37%;
   height: 100px;
-  border: 1px solid;
+
   margin: auto;
   background: #000000;
 
@@ -1932,14 +1929,14 @@ border: none;
 
 .text_center {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
   width: 225px;
-  margin-left: -121px;
+  margin-left: -122px;
   margin-right: 0;
-  margin-top: 10px;
+  margin-top: 11px;
   height: 142px;
-  padding: 10px 10px;
+  padding: 12px 12px;
   position: relative;
   z-index: 1;
 
@@ -1974,8 +1971,7 @@ border: none;
  .namber-control-i{
   display: flex;
   justify-content: end;
-  
-  position: relative;
+    position: relative;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
