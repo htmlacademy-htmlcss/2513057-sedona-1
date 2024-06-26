@@ -10,19 +10,26 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 
 }
-
 html {
   height: 100%;
 }
 
+
+html  {
+  box-sizing: content-box;
+}
+
 body {
-
   margin: 0;
-
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  text-align: center;
 }
 
 
@@ -36,6 +43,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
@@ -60,7 +68,11 @@ body {
   height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: 29px;
+  margin-left: -35px;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: 700;
 }
 .navigation-button:focus,
 .navigation-button:hover {
@@ -90,9 +102,18 @@ height: 48px;
 
 }
 
+.navigation-logo{
 
+ margin-left: 44px;
+ margin-right: 27px;
 
+  }
 
+  .navigation-bloсk-link{
+
+     margin-right: 29px;
+
+     }
 
 
 
@@ -198,6 +219,10 @@ margin-top: 1px;
   list-style-type: none;
   width: 340px;
   align-items: center;
+  line-height: 24px;
+  font-size: 20px;
+  font-family: "PT Sans";
+  font-weight: 700;
 }
 
 
@@ -226,7 +251,10 @@ margin-top: 1px;
   padding: 0 16px ;
 position: relative;
 }
+.navigation-bloсk-link-i{
+  padding-left: 64px ;
 
+}
 
 
 
@@ -252,7 +280,6 @@ position: relative;
 width: 268px;
 display: flex;
 flex-wrap: wrap;
-gap: 10px 10px;
 justify-content: flex-end;
 margin-left: 120px;
 list-style-type: none;
@@ -271,8 +298,10 @@ list-style-type: none;
   text-decoration: none;
   font-size: 0.6em;
   position: absolute;
-  top: -1em; left: 1em;
-  right: -1em; bottom: -1em;
+  top: -11px;
+    left: 2px;
+
+
 
 
 
@@ -288,7 +317,7 @@ list-style-type: none;
 
 .logo-text {
   position: absolute;
-  top: 44px;
+  top: 51px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -327,11 +356,26 @@ list-style-type: none;
   width: 620px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 69px;
+  padding-top: 42px;
   padding-bottom: 69px;
+  line-height: 36px;
+  font-size: 20px;
 
 
 }
+.home{
+  font-family: "PT Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 -40px;
+  padding: 0;
+  width: 700px;
+ }
+
+
+
+
 .hero-welcome::after{
 
  position: absolute;
@@ -344,6 +388,19 @@ list-style-type: none;
  background-image: url("../images/triangels.svg");
  background-repeat: no-repeat;
 }
+
+
+#icon-clock-view {
+  transform:translate(-67px,1px);
+
+}
+
+
+
+
+
+
+
 
 
 .infrastructure-list {
@@ -421,8 +478,11 @@ list-style-type: none;
 
   display: flex;
   text-align: center;
-  margin: 0 auto;
-
+  margin: 22px 0;
+  font-family: "PT Sans";
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 24px;
 
 }
 
@@ -437,6 +497,7 @@ margin: 0;
 .advantages-item {
   display: flex;
 }
+
 
 
 
@@ -919,6 +980,10 @@ margin-top: 0;
   width: 56px;
   height: 44px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
+
 
 }
 
@@ -927,8 +992,8 @@ margin-top: 0;
 }
 
 .footer-social-link {
-  display: block;
-  height: 44px;
+
+
   align-content: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -1549,11 +1614,12 @@ text-decoration: none;
   width: 18px;
   height: 18px;
   border-radius: 50%;
- margin-left: 250px;
+
 }
 
 .control-radio{
 margin-left: -1px;
+position: relative;
 }
 
 .control-input[type="radio"]:checked+.control-mark-radio::before {
@@ -1598,11 +1664,10 @@ margin-left: -1px;
 .modal {
 
   border-radius: 30px;
-  height: 445px;
-  width: 645px;
+
   position: relative;
   margin: auto;
-  padding: 70px;
+  padding: 64px 70px;
   background-color: rgba(255, 255, 255, 1)
 }
 .modal-close-button {
@@ -1652,15 +1717,17 @@ margin-left: -1px;
   margin-top: 10px;
   color: #000000;
  width: 413px;
- height: 36px;
+ line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
    margin: 0;
+   font-family: "PT Sans";
+   font-size: 30px;
 
 }
 
 
-.modal-searh{
+.modal-searh {
   width: 577px;
   height: 448px;
   border-radius: 30px;
@@ -1675,8 +1742,9 @@ margin-left: -1px;
 
 
 .form-label{
-
+  font-family: "PT Sans";
   font-weight: 700;
+
   line-height: 24px;
   font-size: 20px;
   color: #000000;
@@ -1687,31 +1755,28 @@ margin-left: -1px;
 .form-message-error{
   color: rgba(255, 87, 87, 1);
   width: 320px;
-  height: 21px;
-   margin-left: 156px;
-  margin-top: 5px;
-  margin-bottom: 25px;
+
+   margin-left: 158px;
+
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-family: "PT Sans";
   font-weight: 400;
 
 }
   .form-message-available{
     color: rgb(7, 7, 7);
-    width: 320px;
-    height: 21px;
-     margin-left: 150px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    font-size: 16px;
-    line-height: 20px;
+    font-family: "PT Sans";
+     margin-left: 157px;
 
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
 }
 .button-btn{
   display: inline-block;
   text-decoration: none;
-  width:31px;
+  width: 31px;
 height: 20px;
 padding: 14px 10px;
 transition: 0.2s;
@@ -1725,13 +1790,19 @@ background-color: #f5f5e0;
 .auth-form-button{
 display: inline-block;
 text-decoration: none;
-width: 581px;
+width: 577px;
 height: 60px;
 transition: 0.2s;
 background-color: rgba(104, 162, 202, 1);
 border: none;
 border-radius: 10px;
-margin-left: 2px;
+margin-top: -8px;
+text-align: center;
+    font-family: 'PT SANS';
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 20px;
+
 }
 .auth-form-button:hover {
   background-color: #68A2CA;
@@ -1797,98 +1868,217 @@ margin-left: 2px;
 
   }
 
-  .field-group{
+  .field-group-i{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0;
-    margin-top: 58px;
+    margin-bottom: 2px;
+    margin-top: 25px;
     align-items: center;
-    height: 50px;
+
     }
+
+    .field-group{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0px;
+      margin-top: 66px;
+      align-items: center;
+      font-family: "PT Sans";
+      font-weight: 700;
+      }
+
+
+
+
+
 
     .field-group-uzer{
       display: flex;
-   align-items: center;
+      flex-wrap: nowrap;
+      align-items: center;
       padding: 0;
-      margin-top: 15px;
+      margin-top: -2px;
       justify-content: space-between;
-      margin-bottom: 45px;
+      margin-bottom: 48px;
+      width: 577px;
       }
 
 
       .form-field{
-       font-size: 18px;
-  padding-left: 20px;
+        padding-left: 17px;
   font-weight: 700;
   border: none;
   background-color: rgba(242, 242, 242, 1);
-  height: 50px;
-  width: 428px;
-  margin-left: 25px;
+  font-family: "PT Sans";
+  height: 48px;
+  width: 420px;
+  margin-left: 22px;
   border-radius: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: -3px;
         }
 
         .form-field-i{
-          font-size: 18px;
-     padding-left: 20px;
+
+     padding-left: 27px;
      font-weight: 700;
      border: none;
      background-color: rgba(242, 242, 242, 1);
-     height: 50px;
-     width: 418px;
-     margin-left: 25px;
+     font-family: "PT Sans";
+     height: 48px;
+     width: 420px;
+     margin-left: 7px;
      border-radius: 5px;
+     font-size: 18px;
+     line-height: 24px;
+     margin-top: -3px;
            }
 
   .field-group:after{
     content:"";
-    width: 15px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     align-items: center;
     background: url("../images/data.svg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 10px;
     margin-left: -65px;
+    padding-left: 38px;
+    margin-top:-3px;
   }
 
 
-  #adults {
-    width: 21px;
+  .field-group-i:after{
+    content:"";
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background: url("../images/data.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 39px;
+    margin-left: -65px;
+    margin-top: -3px;
+  }
+
+  .age-title {
+    margin-right: 260px;
+  }
+
+
+
+
+
+
+
+
+    #adults {
+    width: 31px;
+
     height: 48px;
     border: none;
-    padding-left: 10px;
-    margin-left: 2px;
+
     background-color:  rgba(242, 242, 242, 1);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'PT SANS';
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
   }
 
   #adults-children {
-    width: 21px;
+    width: 31px;
     height: 48px;
     border: none;
-    padding-left: 10px;
-    margin-left: 2px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
     background-color:  rgba(242, 242, 242, 1);
+    font-weight: 700;
+    font-family: 'PT SANS';
+    text-align: center;
+    text-transform: uppercase;
   }
 
 
 
 .field-group-uzer-half {
-  margin-right: 90px;
+
   position: relative;
   text-align: center;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  margin-left: 50px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'PT SANS';
   border-radius: 5px;
   border: none;
-  background-color: rgba(242, 242, 242, 1);
-  width: 110px;
+  margin-top: 37px;
+  padding: 0;
+}
 
+.field-group-uzer-half-i {
+
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'PT SANS';
+  border-radius: 5px;
+  border: none;
+  margin-left: 88px;
+  margin-top: 36px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.field-group-uzer-i {
+display: flex;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'PT SANS';
+   width: 110px;
   margin: 0;
   padding: 0;
 }
+
+.field-group-uzer-children{
+display: flex;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'PT SANS';
+   width: 110px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
 
 .informational text {
   margin: 0;
@@ -1901,11 +2091,12 @@ margin-left: 2px;
   background-color: #609bab;
   color: #fff;
   border-radius: 50%;
-  margin-left: 38px;
+  margin-left: 11px;
   line-height: 23px;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   text-align: center;
+  margin-top: 17px;
 
 }
 
@@ -1928,17 +2119,25 @@ margin-left: 2px;
 
 
 .text_center {
-  color: #ffffff;
   text-align: left;
-  border-radius: 10px;
-  width: 225px;
-  margin-left: -122px;
-  margin-right: 0;
-  margin-top: 11px;
-  height: 142px;
-  padding: 12px 12px;
+  display: flex;
   position: relative;
-  z-index: 1;
+  top: 66%;
+  right: 116px;
+  width: 256px;
+  height: 143px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+ z-index: 1;
+  transition: opacity 0.3s ease;
+  color: #ffffff;
+  background-color: #333333;
+  margin-top: 17px;
+  font-family: 'PT SANS';
 
 }
 
@@ -1947,26 +2146,26 @@ margin-left: 2px;
   content: "";
   border: 20px solid transparent;
   text-align: center;
-  top: -35px;
-  left: 45%;
+  top: -30px;
+  left: 42%;
 
   border-bottom: 20px solid rgb(4, 4, 4);
 }
 
 .namber-control{
   display: flex;
-  margin-right: 90px;
+margin-top: 19px;
   position: relative;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  margin-left: 50px;
+  margin-left: 46px;
   border-radius: 5px;
   border: none;
   background-color: rgba(242, 242, 242, 1);
   width: 110px;
-  height: 50px;
+  height: 48px;
  }
  .namber-control-i{
   display: flex;
@@ -1976,10 +2175,14 @@ margin-left: 2px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  margin-left: 54px;
+  margin-left: 46px;
   border-radius: 5px;
   border: none;
   background-color: rgba(242, 242, 242, 1);
   width: 110px;
   height: 50px;
+  margin-top: 22px;
  }
+ .modal-container-close {
+  display: none;
+}
