@@ -269,7 +269,7 @@ body {
 margin-left: 2px;
   line-height: 24px;
   font-size: 20px;
-  font-family: "PT Sans Narrow", sans-serif;
+
   font-weight: 700;
 }
 
@@ -1082,7 +1082,7 @@ text-decoration: none;
   line-height: 20px;
   font-weight: 700;
   margin-left: -43px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   height: fit-content;
 }
 
@@ -2298,11 +2298,12 @@ max-width: 100px;
   z-index: 99;
 }
 
-.modal-close-button svg path {
+
+.close-btn-icon path {
   fill: #000000;
 }
 
-.modal-close-button:hover svg circle {
+.close-btn-icon:hover circle {
   fill: #E6E6E6;
 }
 
@@ -2312,7 +2313,7 @@ max-width: 100px;
   outline: 3px solid #82b3d3;
 }
 
-.modal-close-button:active {
+.modal-close-button:active svg path{
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2326,7 +2327,7 @@ max-width: 100px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
 
 }
@@ -2348,7 +2349,7 @@ max-width: 100px;
 
 
 .form-label {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
 
   line-height: 24px;
@@ -2366,7 +2367,7 @@ max-width: 100px;
 
   font-size: 16px;
   line-height: 24px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 
 }
@@ -2408,7 +2409,7 @@ max-width: 100px;
   border-radius: 10px;
   margin-top: -8px;
   text-align: center;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
   font-size: 20px;
@@ -2494,7 +2495,7 @@ max-width: 100px;
   margin-bottom: 0px;
   margin-top: 66px;
   align-items: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -2717,7 +2718,7 @@ max-width: 100px;
   color: #ffffff;
   background-color: #000000;
   margin-top: 17px;
-  font-family: 'PT SANS';
+  font-family: "PT Sans", sans-serif;
 
 }
 
@@ -2766,6 +2767,6 @@ max-width: 100px;
 }
 
 
-/* .modal-container-close {
+ /*.modal-container-close {
   display: none;
 }
