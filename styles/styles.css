@@ -2313,7 +2313,7 @@ max-width: 100px;
   outline: 3px solid #82b3d3;
 }
 
-.modal-close-button:active svg path{
+.modal-close-button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2767,6 +2767,6 @@ max-width: 100px;
 }
 
 
- /*.modal-container-close {
+ .modal-container-close {
   display: none;
 }
