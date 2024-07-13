@@ -24,11 +24,12 @@ html {
 
 body {
   margin: 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(242, 242, 242, 1);
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
+  width: 1280px;
 }
 
 .pade-container {
@@ -149,7 +150,7 @@ body {
 
 .hotels-card-title-i {
   margin-left: -1px;
-  margin-top: 10px;
+  margin-top: 11px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 28px;
@@ -158,8 +159,8 @@ body {
 }
 
 .hotels-card-title-b {
-  margin-left: 1px;
-  margin-top: 10px;
+  margin-left: -1px;
+  margin-top: 11px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 28px;
@@ -456,7 +457,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
-  margin-left: 1px;
+  margin-left: -1px;
 }
 
 .advantages-title-i {
@@ -471,7 +472,7 @@ body {
   line-height: 21px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  margin-top: 19px;
+  margin-top: 17px;
 }
 
 .advantages-discription-s {
@@ -685,8 +686,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  padding-top: 6px;
-  margin-left: -1px;
+  padding-top: 7px;
+  margin-left: -2px;
 }
 
 .infrastructure-discription-i {
@@ -719,6 +720,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   border-radius: 4px;
+  min-height: 52px;
 }
 
 .search-wrapper {
@@ -737,6 +739,7 @@ body {
   font-weight: 700;
   font-family: "PT Sans", sans-serif;
   margin-top: -5px;
+  margin-left: -1px;
 }
 
 .search-discription {
@@ -744,8 +747,8 @@ body {
   line-height: 26px;
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
-  margin-top: -4px;
-  margin-left: -3px;
+  margin-top: -3px;
+  margin-left: -5px;
   margin-bottom: 61px;
 }
 
@@ -762,7 +765,7 @@ body {
   width: 276px;
   flex-wrap: wrap;
   margin-left: 107px;
-  margin-top: -7px;
+  margin-top: -8px;
   margin-bottom: -9px;
 }
 
@@ -843,7 +846,6 @@ body {
 
 .feedback {
   padding-bottom: 100px;
-  max-height: 52px;
   justify-content: center;
   display: flex;
   text-align: center;
@@ -902,7 +904,7 @@ body {
   font-weight: 600;
   margin-left: -44px;
   margin-top: 33px;
-  padding: 8px 50px;
+  padding: 9px 50px;
   height: fit-content;
 }
 
@@ -970,10 +972,9 @@ body {
   background-color: rgba(117, 97, 87, 1);
   min-height: 18px;
   width: 105px;
-  text-align: center;
   text-transform: uppercase;
   align-items: center;
-  padding: 8px 17px;
+  padding: 9px 17px;
 }
 
 .hotels-card-button:hover,
@@ -1003,7 +1004,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-right: 38px;
-  padding: 8px 20px;
+  padding: 9px 20px;
   width: 104px;
 }
 
@@ -1033,7 +1034,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 8px 20px;
+  padding: 9px 20px;
   width: 105px;
   margin-right: 38px;
 }
@@ -1078,9 +1079,9 @@ body {
   font-size: 14px;
   color: rgba(130, 179, 211, 1);
   float: right;
-  margin-right: -70px;
+  margin-right: -69px;
   margin-left: 138px;
-  margin-top: 9px;
+  margin-top: 10px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   flex-wrap: wrap;
@@ -1319,10 +1320,9 @@ input.range-input-max {
 }
 
 .breadcrumbs-arrow-link {
-  width: 6px;
-  height: 10px;
+  width: 1px;
+  min-height: 10px;
   background-image: url("../images/arrow.svg");
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -1333,9 +1333,8 @@ input.range-input-max {
   text-decoration: none;
   font-weight: 400;
   display: flex;
-  align-items: center;
   padding-left: 17px;
-  margin-top: -2px;
+  margin-top: -7px;
 }
 
 .hotels-filter-item {
@@ -1376,7 +1375,7 @@ input.range-input-max {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-left: 77px;
+  margin-left: 82px;
   margin-bottom: 26px;
   flex-wrap: wrap;
 }
@@ -1642,11 +1641,11 @@ input.range-input-max {
   max-width: 1060px;
   min-height: 49px;
   margin-left: -5px;
-  margin-top: -16px;
+  margin-top: -15px;
 }
 
 .hotels-filter-button {
-  margin-top: 16px;
+  margin-top: 11px;
   margin-left: 72px;
   max-width: 88px;
   padding: 8px 26px;
@@ -1657,12 +1656,14 @@ input.range-input-max {
   margin-left: 40px;
   border: none;
   max-width: 190px;
+  margin-top: -4px;
 }
 
 .hotels-filter-group-c {
   margin-left: 40px;
   border: none;
   max-width: 400px;
+  margin-top: -4px;
 }
 
 .range-scale {
@@ -1969,7 +1970,7 @@ input.range-input-max {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: rgba(255, 255, 255, 1)
+  background-color: rgba(242, 242, 242, 0.8)
 }
 
 .modal-close-button {
